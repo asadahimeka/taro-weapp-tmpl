@@ -1,5 +1,7 @@
 /// <reference types="@tarojs/taro" />
 
+import 'taro-ui'
+
 declare module '*.png';
 declare module '*.gif';
 declare module '*.jpg';
@@ -17,3 +19,8 @@ declare namespace NodeJS {
   }
 }
 
+declare module "taro-ui/types/base" {
+  interface AtComponent {
+    children?: React.ReactNode
+  }
+}
