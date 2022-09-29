@@ -1,6 +1,21 @@
 {
+  "root": true,
+  "env": {
+    "es6": true,
+    "browser": true
+  },
   "extends": ["taro/react"],
   "rules": {
+    "quotes": ["error", "single"],
+    "semi": ["error", "never"],
+    "eqeqeq": ["warn", "smart"],
+    "indent": ["error", 2, { "SwitchCase": 1 }],
+    "no-unexpected-multiline": "error",
+    "no-unused-vars": "warn",
+    "no-unused-expressions": "off",
+    "no-multiple-empty-lines": ["warn", { "max": 2 }],
+    "space-before-function-paren": ["warn", { "anonymous": "always", "named": "never", "asyncArrow": "always" }],
+
     "react/jsx-uses-react": "off",
     "react/react-in-jsx-scope": "off"
   }
