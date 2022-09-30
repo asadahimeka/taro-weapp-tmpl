@@ -9,23 +9,23 @@ class HttpRequest {
     setBaseUrl(options)
     setDefaultOption(options, 'method', 'GET')
     setDefaultOption(options.header, 'content-type', 'application/json')
-    setDefaultOption(options.header, 'Authorization', Taro.getStorageSync('Authorization'))
+    // setDefaultOption(options.header, 'Authorization', Taro.getStorageSync('Authorization'))
     return Taro.request(options)
   }
 
-  get(url: string, data?: any, options?: Options) {
+  get(url: string, data?: any, options?: Options): any {
     return this.request({ url, data, ...options })
   }
 
-  post(url: string, data?: any, options?: Options) {
+  post(url: string, data?: any, options?: Options): any {
     return this.request({ method: 'POST', url, data, ...options })
   }
 
-  put(url: string, data?: any, options?: Options) {
+  put(url: string, data?: any, options?: Options): any {
     return this.request({ method: 'PUT', url, data, ...options })
   }
 
-  delete(url: string, data?: any, options?: Options) {
+  delete(url: string, data?: any, options?: Options): any {
     return this.request({ method: 'DELETE', url, data, ...options })
   }
 }

@@ -15,7 +15,7 @@ const customInterceptor: Taro.interceptor = (chain) => {
       return Promise.reject('服务端出现了问题')
 
     } else if (res.statusCode === HTTP_STATUS.FORBIDDEN) {
-      Taro.setStorageSync('Authorization', '')
+      // Taro.setStorageSync('Authorization', '')
       // pageToLogin()
       // TODO 根据自身业务修改
       return Promise.reject('没有权限访问')

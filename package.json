@@ -9,7 +9,7 @@
     "css": "stylus"
   },
   "scripts": {
-    "new": "taro create --name",
+    "new": "plop --plopfile generators/index.js",
     "dev:weapp": "yarn build:weapp -- --watch",
     "build:weapp": "taro build --type weapp",
     "dev:h5": "yarn build:h5 -- --watch",
