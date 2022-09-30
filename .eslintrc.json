@@ -6,17 +6,17 @@
   },
   "extends": ["taro/react"],
   "rules": {
-    "quotes": ["error", "single"],
-    "semi": ["error", "never"],
-    "eqeqeq": ["warn", "smart"],
-    "indent": ["error", 2, { "SwitchCase": 1 }],
+    "eqeqeq": ["warn","smart"],
+    "import/order": ["warn",{"groups": ["builtin","external","internal","parent","sibling","index","object","type"],"pathGroups": [{"pattern": "react","group": "builtin","position": "before"}],"pathGroupsExcludedImportTypes": ["react"]}],
+    "indent": ["error",2,{"SwitchCase": 1}],
+    "no-multiple-empty-lines": ["warn",{"max": 2}],
     "no-unexpected-multiline": "error",
-    "no-unused-vars": "warn",
     "no-unused-expressions": "off",
-    "no-multiple-empty-lines": ["warn", { "max": 2 }],
-    "space-before-function-paren": ["warn", { "anonymous": "always", "named": "never", "asyncArrow": "always" }],
-
+    "no-unused-vars": "warn",
+    "quotes": ["error","single"],
     "react/jsx-uses-react": "off",
-    "react/react-in-jsx-scope": "off"
+    "react/react-in-jsx-scope": "off",
+    "semi": ["error","never"],
+    "space-before-function-paren": ["warn",{"anonymous": "always","named": "never","asyncArrow": "always"}]
   }
 }

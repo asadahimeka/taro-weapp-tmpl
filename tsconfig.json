@@ -9,6 +9,7 @@
     "noImplicitAny": false,
     "allowSyntheticDefaultImports": true,
     "outDir": "lib",
+    "skipLibCheck": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "importsNotUsedAsValues": "error",
@@ -21,8 +22,17 @@
     "resolveJsonModule": true,
     "typeRoots": [
       "node_modules/@types"
-    ]
+    ],
   },
-  "include": ["./src", "./types"],
-  "compileOnSave": false
+  "include": [
+    "./src",
+    "./types",
+  ],
+  "exclude": [
+    "node_modules",
+    "tmp",
+    "temp",
+    "dist",
+  ],
+  "compileOnSave": false,
 }
