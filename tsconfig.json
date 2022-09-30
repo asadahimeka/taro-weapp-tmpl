@@ -23,6 +23,10 @@
     "typeRoots": [
       "node_modules/@types"
     ],
+    "paths": {
+      "@/*": ["src/*"],
+      "@i18n": ["src/locale/i18n.ts"],
+    }
   },
   "include": [
     "./src",

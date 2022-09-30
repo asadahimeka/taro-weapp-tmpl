@@ -1,6 +1,6 @@
 import Taro from '@tarojs/taro'
-import storage from 'src/utils/storage'
-import tip from 'src/utils/tip'
+import storage from '@/utils/storage'
+import tip from '@/utils/tip'
 import http from './http'
 import { BASE_URL } from './common'
 

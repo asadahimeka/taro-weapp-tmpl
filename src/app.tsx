@@ -6,9 +6,11 @@ import './app.styl'
 class App extends Component<PropsWithChildren> {
 
   componentDidMount() {
-    Taro.getSystemInfo().then(({ language }) => {
-      i18n.setLocale(language)
-    })
+    i18n.setLocale('en_US')
+    // Taro.getSystemInfo().then(({ language }) => {
+    //   console.log('language: ', language)
+    //   i18n.setLocale(language)
+    // })
   }
 
   componentDidShow() {}

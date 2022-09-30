@@ -1,3 +1,5 @@
+const path = require('path')
+
 const config = {
   projectName: 'pre-account',
   date: '2022-9-28',
@@ -7,6 +9,10 @@ const config = {
     750: 1,
     828: 1.81 / 2,
     375: 2 / 1
+  },
+  alias: {
+    '@i18n': path.resolve(__dirname, '..', 'src/locale/i18n'),
+    '@': path.resolve(__dirname, '..', 'src'),
   },
   sourceRoot: 'src',
   outputRoot: 'dist',
